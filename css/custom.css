@@ -277,3 +277,93 @@ svg.social_icon {
 .page:not(.page.home) .aside-content {
   display: none;
 }
+
+/* 信息卡片彩带 */
+.author_top:hover {
+  background: url(https://tuchuang.voooe.cn/images/2023/01/02/snow.gif);
+  background-size: cover;
+}
+
+
+/* 滚动条样式 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(73, 177, 245, 0.2);
+  border-radius: 2em;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 136, 204);
+  background-image: -webkit-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.4) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.4) 50%,
+    rgba(255, 255, 255, 0.4) 75%,
+    transparent 75%,
+    transparent
+  );
+  border-radius: 2em;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+::-moz-selection {
+  color: #fff;
+  background-color: var(--theme-color);
+}
+
+@font-face {
+  /* 为载入的字体取名字(随意) */
+  font-family: 'YSHST';
+  /* 字体文件地址(相对或者绝对路径都可以) */
+  src: url(/font/zhanku.woff2);
+  /* 定义加粗样式(加粗多少) */
+  font-weight: normal;
+  /* 定义字体样式(斜体/非斜体) */
+  font-style: normal;
+  /* 定义显示样式 */
+  font-display: block;
+}
+
+/* 鼠标样式 */
+
+body {
+	cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/default.cur),
+		default;
+}
+
+a,
+img {
+	cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/pointer.cur),
+		default;
+}
+
+/* 导航栏做居中处理 */
+#nav-right{
+    flex:1 1 auto;
+    justify-content: flex-end;
+    margin-left: auto;
+    display: flex;
+    flex-wrap:nowrap;
+}
+
+/* 去除导航栏选项中底下的蓝条 */
+#nav *::after{
+    background-color: transparent!important;
+}
+
+/* 导航栏菜单鼠标移入字体放大 */
+#nav #site-name:hover,
+#nav .menus_item:hover,
+#nav #search-button:hover{
+    font-size:28px;
+}
+
